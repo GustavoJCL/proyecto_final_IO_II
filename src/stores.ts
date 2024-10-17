@@ -2,8 +2,8 @@ import { writable } from "svelte/store";
 
 export enum Algorithms {
 	Home,
-  Algorithm1,
-  Algorithm2,
+  CPM,
+  PERT,
   Eoq,
   Epq,
 }

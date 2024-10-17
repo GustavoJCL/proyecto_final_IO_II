@@ -8,6 +8,8 @@
   import Home from "./lib/Home.svelte";
   import Eoq from "./lib/Eoq.svelte";
   import Epq from "./lib/Epq.svelte";
+  import CPM from "./lib/CPM.svelte";
+  import PERT from "./lib/PERT.svelte";
   import { Algorithms, selectedAlgorithm } from "./stores";
   let toggleSidebar: boolean = true;
   $: console.log(toggleSidebar);
@@ -22,10 +24,15 @@
   <div class={`${toggleSidebar ? "ml-64" : "ml-20"}`}>
     {#if $selectedAlgorithm == Algorithms.Home}
       <Home />
-    {:else if $selectedAlgorithm == Algorithms.Algorithm1}{:else if $selectedAlgorithm == Algorithms.Algorithm2}{:else if $selectedAlgorithm == Algorithms.Eoq}
+    {:else if $selectedAlgorithm == Algorithms.CPM}
+      <CPM />
+    {:else if $selectedAlgorithm == Algorithms.PERT}
+      <PERT />
+    {:else if $selectedAlgorithm == Algorithms.Eoq}
       <Eoq />
     {:else if $selectedAlgorithm == Algorithms.Epq}
       <Epq />
     {/if}
+
   </div>
 </div>

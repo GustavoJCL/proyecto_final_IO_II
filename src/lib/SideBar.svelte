@@ -58,12 +58,12 @@
                  hover:bg-gray-200 dark:hover:bg-gray-700
                  transition-all duration-300 ease-in-out`}
       on:click={() => {
-        $selectedAlgorithm = Algorithms.Algorithm1;
+        $selectedAlgorithm = Algorithms.CPM;
       }}
     >
       <IconMathXy />
       {#if sidebarOpen}
-        <div class="ml-2">Primer Algoritmo</div>
+        <div class="ml-2">METODO  CPM</div>
       {/if}
     </button>
     <button
@@ -71,12 +71,12 @@
                  hover:bg-gray-200 dark:hover:bg-gray-700
                  transition-all duration-300 ease-in-out`}
       on:click={() => {
-        $selectedAlgorithm = Algorithms.Algorithm2;
+        $selectedAlgorithm = Algorithms.PERT;
       }}
     >
       <IconMathXy />
       {#if sidebarOpen}
-        <div class="ml-2">Segundo Algoritmo</div>
+        <div class="ml-2"> METODO PERT</div>
       {/if}
     </button>
     <button
