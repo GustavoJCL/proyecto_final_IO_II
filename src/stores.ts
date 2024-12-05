@@ -6,6 +6,8 @@ export enum Algorithms {
   PERT,
   Eoq,
   Epq,
+  MremplazoE,
+  TfuerzaT,
 }
 
 export let selectedAlgorithm = writable<Algorithms>(Algorithms.Home);

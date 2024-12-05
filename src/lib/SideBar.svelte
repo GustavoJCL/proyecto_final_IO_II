@@ -105,5 +105,31 @@
         <div class="ml-2">EPQ</div>
       {/if}
     </button>
+    <button
+      class={`flex items-center justify-between w-full text-left p-2 rounded-md 
+                 hover:bg-gray-200 dark:hover:bg-gray-700
+                 transition-all duration-300 ease-in-out`}
+      on:click={() => {
+        $selectedAlgorithm = Algorithms.MremplazoE;
+      }}
+    >
+      <IconEaseInOutControlPoints />
+      {#if sidebarOpen}
+        <div class="ml-2">EremplazoE</div>
+      {/if}
+    </button>
+    <button
+      class={`flex items-center justify-between w-full text-left p-2 rounded-md 
+                 hover:bg-gray-200 dark:hover:bg-gray-700
+                 transition-all duration-300 ease-in-out`}
+      on:click={() => {
+        $selectedAlgorithm = Algorithms.TfuerzaT;
+      }}
+    >
+      <IconEaseInOutControlPoints />
+      {#if sidebarOpen}
+        <div class="ml-2">tfuerzaT</div>
+      {/if}
+    </button>
   </nav>
 </div>

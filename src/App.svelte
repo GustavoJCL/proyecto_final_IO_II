@@ -10,7 +10,10 @@
   import Epq from "./lib/Epq.svelte";
   import CPM from "./lib/CPM.svelte";
   import PERT from "./lib/PERT.svelte";
+  import MremplazoE from "./lib/MremplazoE.svelte";
+  import tfuerzaT from "./lib/TfuerzaT.svelte";
   import { Algorithms, selectedAlgorithm } from "./stores";
+  import TfuerzaT from "./lib/TfuerzaT.svelte";
   let toggleSidebar: boolean = true;
   $: console.log(toggleSidebar);
 </script>
@@ -32,6 +35,11 @@
       <Eoq />
     {:else if $selectedAlgorithm == Algorithms.Epq}
       <Epq />
+    {:else if $selectedAlgorithm == Algorithms.MremplazoE}
+      <MremplazoE />
+    {:else if $selectedAlgorithm == Algorithms.TfuerzaT}
+      <TfuerzaT />
+    
     {/if}
 
   </div>
